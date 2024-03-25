@@ -23,10 +23,11 @@
     </div>
     <div class="container">
 
-      <div class="span-2 first colborder">
+      <div class="span-4 first colborder">
   <a href="index.html">home</a><br>
 <a href="news.html">news</a><br>
-            <a href="research.html">research</a><br>
+       <a href="mlresearch.html">machine learning research</a><br>
+            <a href="galresearch.html">galaxy research</a><br>
   <a href="outreach.html">outreach</a><br>
       <a href="writing.html">writing</a><br>
 	<a href="talks.html">talks</a><br>
@@ -34,45 +35,12 @@
         <a href="misc.html">misc.</a><br>
           <a href="cv.html">cv</a><br>
       </div>
-      <div class="span-13">
-<hr>
-<p><b>Testing the fidelity of uncertainty predictions from machine learning inference methods</b>
-<p>With great machine learning power comes great responsibility.
-<p>One of my roles in the Deepskies group is to develop and test tools for benchmarking and assessing uncertainty predictions from 
-machine learning methods.
-<img src="files/comparison_project.png" width=500 class="center">
-<p>DeepUQ Github: <a href="https://github.com/deepskies/DeepUQ/tree/main">https://github.com/deepskies/DeepUQ/tree/main</a> 
-
-<hr>
-<p><b>Flexible benchmark datasets for machine learning research</b> 
-<p>In order to evaluate the performance of ML tools for inference, I rely upon benchmark datasets.
-In Deepskies lab, we have developed our own benchmark utilities (DeepBench), 
-which produces simple astrophysical objects in a flexible framework that allows the user to control the noise properties.
-Using simple tools like a pendulum with stochastic noise,
-I am creating a methodology for comparing the bias and uncertainty in parameter estimation from various inference techniques. This type 
-of simple dataset also allows me to experiment with comparing hierarchical to non-hierarchical inference paradigms (below).
-<img src="files/one_pendulum.png" width=500 class="center">
-<p>DeepBench Github: <a href="https://github.com/deepskies/DeepBench">https://github.com/deepskies/DeepBench</a>
-
-<hr>
-<p><b>Hierarchical Bayesian inference and simulation based inference (SBI)</b>
-<p>Hierarchical inference is an important tool for estimating parameters of individual data units as well as global parameters.
-This is especially relevant to estimating cosmological parameters, for instance in the case of multiple strong lenses in an all sky imaging survey; the goal is to estimate the individual lens parameters as well as global cosmological parameters.
-<p>Using the above uncertainty framework, I compare various state-of-the-art inference techniques such as <b>hierarchical inference (sampling)</b> and <b>simulation based inference</b>.
-<img src="files/hierarchical_pendulum.png" width=500 class="center">
-^Using the benchmark pendulum dataset to compare the performance of hierarchical sampling and SBI.
-
+      <div class="span-11">
 <hr>
 <p><b>Measuring the galaxy merger fraction for a huge catalog of mergers in the local Universe</b>
 <p>I've been working on carefully identifying merging galaxies in imaging data for a long time; this paper is the culmination of this work. I've gone through the 1.3 million galaxy photometric dataset and applied my merger classifier from 2019. The result is a massive catalog of different kinds of mergering galaxies (I also further identify mergers by stage in the merger). Using this catalog, I measure how the merger fraction trends with galaxy mass and redshift.
 <img src="files/sdss_imaging_overlay.png" width=500 class="center">
 <p>Paper link: <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.522....1N/abstract">Nevin+2023</a>
-
-<hr>
-<p><b>Harnessing machine learning to improve Chandra HRC</b>                                                                                                                                           
-<p>I have worked closely with Chandra leadership to develop a machine learning framework, <a href="https://github.com/beckynevin/EVE">EVE</a>, to distinguish between real X-ray events and background events (such as cosmic rays). An improved background identification technique is highly valued by the X-ray community, as it would greatly improve the S/N of future and archival Chandra observations. However, this is a huge challenge, as X-ray events are highly multi-dimensional (i.e., each event has information about the time of arrival, position, and energy) and we lack labelled synthetic data. 
-<img src="files/Chandra_ML.png" width=500 class="center">
-<p> With EVE, I am pursuing a multi-pronged approach for background classification, using multiple options for machine learning algorithms such as a supervised random forest and a semi-supervised bagging classifier that learns from X-ray observations on the fly. The figure above shows an example of the semi-supervised technique assigning probability values to events.
 
 <hr>
 <p><b>Using deep learning to identify high redshift merging galaxies in JWST</b>
