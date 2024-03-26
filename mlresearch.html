@@ -23,17 +23,17 @@
     </div>
     <div class="container">
 
-    <div class="span-4 first colborder">
+      <div class="span-4 first colborder">
         <a href="index.html">home</a><br>
         <a href="mlresearch.html">machine learning research</a><br>
         <a href="galresearch.html">galaxy research</a><br>
-        <a href="news.html">news</a><br>
-        <a href="outreach.html">science communication</a><br>
+        <a href="cv.html">resume and cv</a><br>
+  	    <a href="outreach.html">science communication</a><br>
         <a href="writing.html">writing</a><br>
-        <a href="talks.html">talks</a><br>
+	      <a href="talks.html">talks</a><br>
+        <a href="news.html">news</a><br>
         <a href="stickers.html">stickers</a><br>
         <a href="misc.html">about me</a><br>
-        <a href="cv.html">resume and cv</a><br>
       </div>
       <div class="span-13">
 
@@ -78,6 +78,15 @@ of simple dataset also allows me to experiment with comparing hierarchical to no
 <p><a href="https://github.com/deepskies/DeepBench">DeepBench Github</a>
 
 <hr>
+
+<p><b>Hierarchical Bayesian inference and simulation based inference (SBI)</b>
+  <p>Hierarchical inference is an important tool for estimating parameters of individual data units as well as global parameters.
+  This is especially relevant to estimating cosmological parameters, for instance in the case of multiple strong lenses in an all sky imaging survey; the goal is to estimate the individual lens parameters as well as global cosmological parameters.
+  <p>Using the above uncertainty framework and DeepBench tools, I compare various state-of-the-art inference techniques such as <b>hierarchical inference (sampling)</b> and <b>simulation based inference</b>.
+  <img src="files/hierarchical_pendulum.png" width=500 class="center">
+  ^Using the benchmark pendulum dataset to compare the performance of hierarchical sampling and SBI.
+
+  <hr>
 
 <p><b>Harnessing machine learning to improve Chandra HRC</b>                                                                                                                                           
 <p>I worked closely with Chandra leadership to develop a machine learning framework, <a href="https://github.com/beckynevin/EVE">EVE</a>, to distinguish between real X-ray events and background events (such as cosmic rays). An improved background identification technique is highly valued by the X-ray community, as it would greatly improve the S/N of future and archival Chandra observations. However, this is a huge challenge, as X-ray events are highly multi-dimensional (i.e., each event has information about the time of arrival, position, and energy) and we lack labelled synthetic data.</p>
