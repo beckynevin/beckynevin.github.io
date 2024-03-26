@@ -47,24 +47,33 @@
   <img src="files/website_MVEs.png" width=500 class="center">
   <p>I work with mean variance estimation and deep evidential regression networks (among others) to quantify epistemic and aleatoric uncertainty.</p>
   <p>A significant portion of this project involves developing a framework to assess these types of uncertainty. For example, we expect the contribution from epistemic uncertainty to decrease with epoch as the model learns to predict the true values:</p>
-  <img src="files/website_with_epoch_all_noise.png" width=500 class="center">
-  <p>We also expect the above relationship to depend on injected noise (above).</p>
+  <img src="files/website_with_epoch.png" width=500 class="center">
   <p>DeepUQ Github: <a href="https://github.com/deepskies/DeepUQ/tree/main">https://github.com/deepskies/DeepUQ/tree/main</a> 
   
   <hr>
 
-<p><b>Testing the fidelity of uncertainty predictions from machine learning inference methods</b>
-<p>With great machine learning power comes great responsibility.
-<p>One of my roles in the Deepskies group is to develop and test tools for benchmarking and assessing uncertainty predictions from 
-machine learning methods.
-<img src="files/comparison_project.png" width=500 class="center">
-<p>DeepUQ Github: <a href="https://github.com/deepskies/DeepUQ/tree/main">https://github.com/deepskies/DeepUQ/tree/main</a> 
 
-<hr>
 <p><b>DeepDiagnostics: Software for assessing the quality of inference</b>
-
+  <p>I created DeepDiagnostics, which is a software package for diagnosing the quality of inference for different inference techniques, ranging from likelihood-based techniques such as MCMC to simulation-based inference. Simulation-based inference is an ML-enabled technique to accelerate traditionally computationally expensive inference approaches. It achieves this speed up by approximating the likelihood using a normalizing flow or similar generative technique. </p>
+  <p>Since the Deepskies lab has experience in SBI, I designed DeepDiagnostics to work in concert with mackelab's sbi software.</p>
+  <p>It includes utilities that handle data generation, saving, and lookup, as well as evaluation and plotting utilities for flexible corner plots (below) and evaluation techniques such as coverage fraction (below):</p>
+  <div style="display: inline-block;">
+    <img src="files/website_corner.png" width="500" class="center">
+  </div>
+  <div style="display: inline-block;">
+    <img src="files/website_coverage.png" width="500" class="center">
+  </div> 
 
 <hr>
+<p><b>Hierarchical Bayesian inference and simulation based inference (SBI)</b>
+  <p>Hierarchical inference is an important tool for estimating parameters of individual data units as well as global parameters.
+  This is especially relevant to estimating cosmological parameters, for instance in the case of multiple strong lenses in an all sky imaging survey; the goal is to estimate the individual lens parameters as well as global cosmological parameters.
+  <p>Using the above uncertainty framework, I compare various state-of-the-art inference techniques such as <b>hierarchical inference (sampling)</b> and <b>simulation based inference</b>.
+  <img src="files/hierarchical_pendulum.png" width=500 class="center">
+  ^Using the benchmark pendulum dataset to compare the performance of hierarchical sampling and SBI.
+  
+  <hr>
+
 <p><b>Flexible benchmark datasets for machine learning research</b> 
 <p>In order to evaluate the performance of ML tools for inference, I rely upon benchmark datasets.
 In Deepskies lab, we have developed our own benchmark utilities (DeepBench), 
@@ -76,14 +85,7 @@ of simple dataset also allows me to experiment with comparing hierarchical to no
 <p>DeepBench Github: <a href="https://github.com/deepskies/DeepBench">https://github.com/deepskies/DeepBench</a>
 
 <hr>
-<p><b>Hierarchical Bayesian inference and simulation based inference (SBI)</b>
-<p>Hierarchical inference is an important tool for estimating parameters of individual data units as well as global parameters.
-This is especially relevant to estimating cosmological parameters, for instance in the case of multiple strong lenses in an all sky imaging survey; the goal is to estimate the individual lens parameters as well as global cosmological parameters.
-<p>Using the above uncertainty framework, I compare various state-of-the-art inference techniques such as <b>hierarchical inference (sampling)</b> and <b>simulation based inference</b>.
-<img src="files/hierarchical_pendulum.png" width=500 class="center">
-^Using the benchmark pendulum dataset to compare the performance of hierarchical sampling and SBI.
 
-<hr>
 <p><b>Harnessing machine learning to improve Chandra HRC</b>                                                                                                                                           
 <p>I have worked closely with Chandra leadership to develop a machine learning framework, <a href="https://github.com/beckynevin/EVE">EVE</a>, to distinguish between real X-ray events and background events (such as cosmic rays). An improved background identification technique is highly valued by the X-ray community, as it would greatly improve the S/N of future and archival Chandra observations. However, this is a huge challenge, as X-ray events are highly multi-dimensional (i.e., each event has information about the time of arrival, position, and energy) and we lack labelled synthetic data. 
 <img src="files/Chandra_ML.png" width=500 class="center">
