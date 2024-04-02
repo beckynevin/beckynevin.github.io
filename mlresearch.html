@@ -29,16 +29,12 @@
         <a href="galresearch.html">galaxy research</a><br>
         <a href="cv.html">resume and cv</a><br>
   	    <a href="outreach.html">science communication</a><br>
-        <a href="writing.html">writing</a><br>
-	      <a href="talks.html">talks</a><br>
+        <a href="talks.html">talks</a><br>
         <a href="news.html">news</a><br>
         <a href="stickers.html">stickers</a><br>
         <a href="misc.html">about me</a><br>
       </div>
       <div class="span-13">
-
-<p>This page is under development.
-<hr>
 
 <p><b>DeepUQ: Testing the fidelity of uncertainty predictions from machine learning methods</b>
   <p>With great machine learning power comes great responsibility. One of my roles in the Deepskies group is to develop and test tools for benchmarking and assessing uncertainty predictions from 
@@ -46,7 +42,7 @@
   <img src="files/website_MVEs.png" width=500 class="center">
   <p>I work with mean variance estimation and deep evidential regression networks to quantify epistemic and aleatoric uncertainty.</p>
   <p>Since this is an emergent field in deep learning, a significant portion of this project involves developing a framework to assess these types of uncertainty. For example, we expect the contribution from epistemic uncertainty to decrease with epoch as the model learns to predict the true values. Below I show the results when we inject the data with $\sigma=10$ noise and train a Deep Ensemble of mean variance estimation networks to predict a linear regression ($y = mx+b+\sigma$). </p>
-  <img src="files/website_with_epoch.png" width=500 class="center">
+  <img src="files/website_with_epoch.png" width=400 class="center">
   <p><a href="https://github.com/deepskies/DeepUQ/tree/main">DeepUQ Github</a> 
   
   <hr>
@@ -57,10 +53,10 @@
   <p>Since the Deepskies lab has experience in SBI, I designed DeepDiagnostics to work in concert with mackelab's sbi software.</p>
   <p>It includes utilities that handle data generation, saving, and lookup, as well as evaluation and plotting utilities for flexible corner plots (below) and evaluation techniques such as coverage fraction (below):</p>
   <div style="display: inline-block;">
-    <img src="files/website_corner.png" width="500" class="center">
+    <img src="files/website_corner.png" width="400" class="center">
   </div>
   <div style="display: inline-block;">
-    <img src="files/website_coverage.png" width="500" class="center">
+    <img src="files/website_coverage.png" width="400" class="center">
   </div> 
   <p><a href="https://github.com/deepskies/DeepDiagnostics">DeepDiagnostics Github</a> 
   <p>See also, the SBI tutorial notebooks with accompanying diagnostics created by myself and Jason Poh: <a href="https://colab.research.google.com/drive/1NpwdTy98Ifo-vPuI5Rt-HTFTalgP3cZH?usp=sharing">colab notebook for strong lens SBI</a> and <a href="https://colab.research.google.com/drive/1CRBQqSim3KZV6s5hcwz-zMVmbJzTeaWz?usp=sharing">colab notebook for linear regression</a> as well as the <a href="files/SBI_talk_COFI.pdf">slides from an SBI tutorial talk</a> I gave at a physics winter school.</p>
