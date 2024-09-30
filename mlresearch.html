@@ -37,15 +37,14 @@
 
 <p><b>DeepUQ: Testing the fidelity of uncertainty predictions from deep learning methods</b>
   <p>One of my roles in the Deepskies group is to develop and test tools for benchmarking and assessing uncertainty predictions from 
-  machine learning methods. I'm currently testing Deep Ensembles and Deep Evidential Regression, Deep Ensembles shown below:</p>
-  <img src="files/website_MVEs.png" width=500 class="center">
-  <p>My current focus is the aleatoric uncertainty shown above.</p>
+  machine learning methods. I'm currently testing Deep Ensembles and Deep Evidential Regression, two types of deep learning methods that predict aleatoric uncertainty. To test their predictions, I create a dataset with different dimensionalities and different types of injected (known) uncertainty (on the input and output variables):</p>
 
 <img src="files/design_high.png" width="400" class="center">
+<p>I then train the Deep Ensemble and the Deep Evidential Regression models on the above experiments and compare how the predicted aleatoric uncertainty compares with the true aleatoric uncertainty.</p>
 
   <img src="files/sigma_in_sigma_out_ridgeplot_ensemble_two_panel_noise_color_15_uniform.png" width=400 class="center">
   <p><a href="https://github.com/deepskies/DeepUQ/tree/main">DeepUQ Github</a> 
-  
+  <p>For the majority of experiments, the predicted aleatoric uncertainty significantly underestimates the true injected uncertainty, which means that these methods are miscalibrated, specifically in the direction of being overconfident, which should worry everyone.</p>
   <hr>
 
 
